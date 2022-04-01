@@ -1,0 +1,193 @@
+/* Selector por id */
+#titulo {
+    color: orangered;
+}
+
+/* Selector de clase de una etiqueta */
+p.texto {
+    color:cadetblue;
+}
+
+p.especial{
+    color:magenta;
+}
+
+/* selector de etiquetas dentro de otra etiqueta */
+div p {
+    color: royalblue
+}
+
+/* El mismo que el anterior, pero para dos casos a la vez. */
+div h2, div h3{
+    color: brown;
+}
+
+/* Selector universal, pero a diferencia de los anteriores, no sobreescribe si esque se escribe despues de otra propiedad */
+* {
+    font-size: 24px;
+    font-family: 'IBM Plex Sans Arabic', 'Verdana';
+}
+
+/* 
+Colores en hexadecimal, los primeros 2 son el rojo, los otros dos son el green y lus ultimos 2 son el blue. (Red Gren Blue)
+.color {
+    color: #ff0000;
+} 
+Selector de colores en formato rgb
+.color {
+    color: rgb(255, 0, 0)
+}
+*/
+
+.color{
+    /* border: 5px black solid; */
+    /* 
+       dotted
+       dashed
+       solid
+       double
+       groove
+       ridge
+       inset
+       outset
+       none
+       hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 1rem;
+}
+
+#fondo {
+    height: 10em;
+    background: #f00 url('cat.jpeg') repeat-y right bottom / 5em 5em ;
+    
+
+    /* 
+    background-size: 5em 5em;
+    background-color: rgba(255,0,0);
+     opacity: 0.3; 
+    background-image: url('./cat.jpeg');
+    
+    
+    background-repeat: repeat-y;
+    background-position: right bottom; */
+}
+
+.margen {
+    background-color: chocolate;
+    padding: 3em;
+    outline: 0.5em solid #0f0;
+    border: solid 1em black;
+    margin: 2em;
+    overflow: hidden;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+/* Seleccionar cuando el link no ha sido seleccionado */
+    /* Seleccionar cuando el link no ha sido seleccionado */
+a:link {
+    color: blueviolet
+}
+    /* Aplicar el estilo a los estilos que ya han sido visitados */
+a:visited {
+    color:gray;
+}
+    /* Cuado paso el mouse por encima */
+a:hover {
+    color: yellow;
+}
+    /* Cuando pinchamos el link */
+a:active{
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    /* list-style-position: inside ; */
+    list-style-type: circle;
+    padding-left: 20;
+
+}
+
+table {
+    width:  100%;
+    border-collapse: collapse ;
+}
+
+th, td{
+    border: solid 1px #e1e;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #edf;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.inline {
+    display: inline;
+}
+span {
+   display: block;
+   /*display: none;*/
+   /* visibility: hidden; */
+   max-width: 600px;
+   background-color: rebeccapurple;
+}
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
+
+}
+
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 95px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
